@@ -1,0 +1,198 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Dark gray background */
+    color: #e0e0e0; /* Lighter gray text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #34495e; /* Blue-gray */
+    color: #ecf0f1; /* Light gray text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Title (header h1) styles */
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+/* Navigation styles */
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1; /* Light gray */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f88379; /* Softer coral hover effect */
+}
+
+/* Hide the navigation bar */
+nav {
+    display: none; /* Temporarily hide the navigation bar */
+}
+
+/* Main container */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #2c3e50; /* Dark blue-gray */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Section styles */
+section h2 {
+    font-size: 28px; /* Increased font size for section headings */
+    margin-bottom: 15px;
+    color: #f88379; /* Softer coral */
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.8; /* Improved readability */
+    margin-bottom: 20px;
+    padding: 10px; /* Add padding around the text */
+    background-color: #2c3e50; /* Dark blue-gray background */
+    color: #ecf0f1; /* Light gray text */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Form select dropdown styles */
+.form-select {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #34495e; /* Slightly lighter blue-gray */
+    border-radius: 4px;
+    background-color: #1e272e; /* Darker gray */
+    color: #e0e0e0; /* Lighter gray */
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.form-select option {
+    background-color: #1e272e; /* Darker gray */
+    color: #e0e0e0; /* Lighter gray */
+}
+
+/* Label styles */
+.form-label {
+    margin-left: 10px; /* Push the label slightly to the right */
+    font-size: 18px; /* Slightly larger font size for labels */
+    font-weight: bold; /* Make labels bold for better visibility */
+}
+
+/* Button styles */
+.btn-primary {
+    display: block; /* Make the button a block element */
+    margin: 20px auto; /* Center the button horizontally */
+    background-color: #f88379; /* Softer coral */
+    border: none;
+    padding: 10px 20px;
+    color: #ecf0f1; /* Light gray text */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #f76a5e; /* Slightly darker softer coral */
+}
+
+/* Output text styles */
+#comparisonOutput {
+    display: none; /* Hide the box initially */
+    font-size: 18px; /* Larger font size */
+    margin-top: 20px;
+    padding: 15px; /* Add padding inside the box */
+    background-color: #34495e; /* Complementary blue-gray background */
+    color: #ecf0f1; /* Light gray text */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #f88379; /* Softer coral border */
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Make the text bold */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+/* Footer styles */
+footer {
+    background-color: #34495e; /* Complementary blue-gray */
+    color: #ecf0f1; /* Light gray */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Custom styles for the dropdown */
+
+.custom-dropdown {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #1e272e; /* Darker gray */
+    color: #e0e0e0; /* Light gray */
+    cursor: pointer;
+    max-width: 100%;
+}
+
+/* Indent the dropdown options more */
+.custom-dropdown .dropdown-item {
+    padding-left: 20px; /* Push the dropdown options further to the right */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #34495e; /* Slightly lighter blue-gray */
+    white-space: normal; /* Allow text to wrap */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-dropdown .dropdown-item:last-child {
+    border-bottom: none;
+}
+
+/* Dropdown hover with 30% transparency and light gray text */
+.custom-dropdown .dropdown-item:hover {
+    background-color: rgba(248, 131, 121, 0.5); /* 50% transparent softer coral */
+    color: #e0e0e0; /* Light gray text */
+    cursor: pointer;
+}
+
+/* Style for the selected dropdown item */
+.custom-dropdown .dropdown-item.selected {
+    background-color: #f88379; /* Softer coral */
+    color: #1e1e1e; /* Dark gray text */
+    font-weight: bold;
+}
+
+/* Indent the paragraphs inside the dropdown even further */
+.custom-dropdown .dropdown-item p {
+    margin-left: 30px; /* Push the paragraphs inside dropdown items even further to the right */
+    margin-bottom: 5px;
+    color: #e0e0e0; /* Light gray text */
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <style>
+        section > p {
+            font-size: 18px; /* Slightly larger font size */
+            line-height: 1.8; /* Increased line height */
+            margin-bottom: 20px;
+            padding: 10px; /* Add padding around the text */
+            background-color: #2c3e50; /* Dark blue-gray background */
+            color: #ecf0f1; /* Light gray text */
+            border-radius: 4px; /* Rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <header class="py-3">
+        <h1>Outil CBCS</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="/">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="/about">À propos</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container mt-4">
+        <section>
+            <h2>Usage mixtes</h2>
+            <p>340. Est exempté de l'application du présent chapitre, 
+                tout bâtiment autre qu'une résidence privée pour aînés 
+                qui abrite uniquement un des usages principaux prévus 
+                au Code national du bâtiment et ci-après mentionné :</p>
+            <div class="mb-3">
+                <label for="dropdown1" class="form-label">Sélectionnez le premier usage :</label>
+                <div class="custom-dropdown" id="dropdown1">
+                    <div class="dropdown-item" data-value="1">
+                        1° un établissement de réunion non visé au paragraphe 6° qui n'accepte pas plus de 9 personnes;
+                    </div>
+                    <div class="dropdown-item" data-value="2">
+                        2° un établissement de soins ou de détention qui constitue :
+                        <p>a - soit une prison;</p>
+                        <p>b - soit un centre d'éducation surveillé avec ou sans locaux de détention qui n'héberge ou n'accepte pas plus de 9 personnes;</p>
+                        <p>c - soit une maison de convalescence, un établissement de soins ou d'assistance ou un centre de réadaptation qui n'héberge ou n'accepte pas plus de 9 personnes;</p>
+                    </div>
+                    <div class="dropdown-item" data-value="3">
+                        3° une habitation qui constitue :
+                        <p>a - une maison de chambres ou une pourvoirie n'offrant pas de services d'hôtellerie lorsqu'un tel bâtiment comporte au plus 9 chambres;</p>
+                        <p>b - une maison unifamiliale dans laquelle est exploitée, par une personne physique qui y réside, un gîte touristique dans lequel au plus 5 chambres à coucher sont offertes en location;</p>
+                    </div>
+                    <div class="dropdown-item" data-value="4">
+                        4° un établissement industriel ayant une surface totale de plancher d'au plus 300 m2;
+                    </div>
+                    <div class="dropdown-item" data-value="5">
+                        5° un établissement de service ayant une surface totale de plancher d'au plus 300 m2;
+                    </div>
+                    <div class="dropdown-item" data-value="6">
+                        6° un établissement d'enseignement d'au plus 2 étages en hauteur de bâtiment;
+                    </div>
+                    <div class="dropdown-item" data-value="7">
+                        7° un établissement de soins pour animaux ayant une surface totale de plancher d'au plus 300 m2;
+                    </div>
+                    <div class="dropdown-item" data-value="8">
+                        8° un établissement de loisirs ayant une surface totale de plancher d'au plus 300 m2;
+                    </div>
+                    <div class="dropdown-item" data-value="9">
+                        9° un établissement de culte ayant une surface totale de plancher d'au plus 300 m2;
+                    </div>
+                    <div class="dropdown-item" data-value="10">
+                        10° un établissement de restauration ayant une surface totale de plancher d'au plus 300 m2.
+                    </div>
+                </div>
+            </div>
+        <p>341. Sont aussi exemptés de l'application du présent chapitre, les bâtiments qui abritent, outre l’un ou plusieurs des usages exemptés aux paragraphes 1°, 3°, 4°, 5° et 6° de l'article 340, l'un des usages suivants :</p>
+            <div class="mb-3">
+                <label for="dropdown2" class="form-label">Sélectionnez le deuxième usage :</label>
+                <div class="custom-dropdown" id="dropdown2">
+                    <div class="dropdown-item" data-value="A">1° un immeuble utilisé comme logement d'au plus 2 étages en hauteur de bâtiment ou d'au plus 8 logements;</div>
+                    <div class="dropdown-item" data-value="B">2° un établissement commercial ayant une surface totale de plancher d'au plus 300 m2;</div>
+                    <div class="dropdown-item" data-value="C">3° un établissement d'affaires, d'au plus 2 étages en hauteur de bâtiment.</div>
+                </div>
+            </div>
+
+            <button id="compareButton" class="btn btn-primary">Comparer</button>
+            <p id="comparisonOutput" class="mt-3"></p>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 moi. Tous droits réservés.</p>
+    </footer>
+    <!-- Add Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/custom.js"></script>
+</body>
+</html>

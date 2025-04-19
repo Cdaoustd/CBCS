@@ -1,0 +1,20 @@
+title = "FonctionsCBCS"
+baseURL = "https://example.com/"
+languageCode = "fr-ca"
+
+[params]
+  description = "Fonctions pour comprendre le cbcs"
+
+[author]
+  name = "Carine Daoust"
+  email = "carine.daoust.d@gmail.com"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[permalinks]
+  post = "/:year/:month/:title/"
+
+[minify]
+  minifyJS = true

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
+</head>
+<body>
+    {{ partial "header.html" . }}
+
+    <main>
+        <h1>{{ .Title }}</h1>
+        {{ range .Pages }}
+            <article>
+                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                <p>{{ .Summary }}</p>
+            </article>
+        {{ end }}
+    </main>
+
+    <footer>
+        <p>&copy; {{ now.Format "2006" }} Your Site Name</p>
+    </footer>
+</body>
+</html>
